@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Radio</title>
+    <style>
+        fieldset{
+            background-color: lightblue;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+        legend{
+            background-color: #7498fb;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="form_radio.php" method="get">
+        <fieldset>
+            <legend> ¿Qué color te gusta más? </legend> <br>
+            <input type="radio" name="color" value="Azul" id="">Azul <br>
+            <!-- name: Variable. Value: valor -->
+            <input type="radio" name="color" value="Amarillo" id="">Amarillo <br>
+            <input type="radio" name="color" value="Rojo" id="">Rojo<br>
+            <input type="radio" name="color" value="Naranja" id="">Naranja<br>
+            <input type="radio" name="color" value="Blanco" id="">Blanco<br>
+            <!-- Es exclusivo ya que todos tiene el mismo nombre. En el caso de querer seleccionar más de 1, cambiar los nombres -->
+            <!-- si quieremos seleccionar 2, poner color1 y color2 por ejemplo -->
+            <!-- si quieremos seleccionar 3, poner color1, color2 y color3 por ejemplo -->
+
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
