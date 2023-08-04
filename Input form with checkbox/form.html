@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input type checkbox</title>
+</head>
+<body>
+    <form action="form.php" method="get">
+
+        <fieldset>
+            <legend>
+                Checkbox
+            </legend>
+            <label for="">Opciones a escoger</label>
+            <!-- Lo que nos transite es el value -->
+            <input type="checkbox" name="extras[]" value="garatge" id="">Garatge <!--Es un array[], te permite seleccionar varias opciones-->
+            <input type="checkbox" name="extras[]" value="piscina" id="">Piscina
+            <input type="checkbox" name="extras[]" value="jardí" id="">Jardí
+            <input type="checkbox" name="extras[]" value="barbacoa" id="">Barbacoa
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
